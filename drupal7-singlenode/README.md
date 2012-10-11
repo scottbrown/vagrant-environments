@@ -25,7 +25,7 @@ provides fast and simple creation of a basic Drupal system.
 
 ## Drupal Website
 
-You will be able to see your website at: (http://localhost:8080/drupal7).
+You will be able to see your website at: [http://localhost:8080/drupal7].
 
 ## APC Caching
 
@@ -33,7 +33,7 @@ Only APC opcode caching is being used, as APC for data caching is not
 always the best (APC's memory mgmt sucks) and Memcached is much better.
 
 As an added bonus, you will also be able to view APC's statistics by 
-visiting: (http://localhost:8080/apc.php).
+visiting: [http://localhost:8080/apc.php].
 
 To prevent APC's stats page from skewing the statistics, I am manually 
 filtering out `/var/www/apc.php` from being in the opcode cache.
@@ -47,5 +47,4 @@ $ vagrant up
 $ vagrant halt
 $ vagrant destroy
 ```
-
 

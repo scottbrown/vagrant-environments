@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant::Config.run do |config|
+  config.vm.define :web do |web|
+    web.vm.customize ["modifyvm", :id, "--name", "drupal7-singlenode", "--memory", "512"]
+    web.vm.box = "precise64"
+    web.vm.box_url = "http://files.vagrantup.com/precise64.box"
+    web.vm.host_name = "web"
+    web.vm.network :hostonly, "33.33.13.31"
+    web.vm.forward_port 22, 2200, :auto => true
+    web.vm.forward_port 80, 8080, :auto => true
+
+    web.vm.provision :puppet do |puppet|
+      puppet.manifests_path = "puppet/manifests"
+      puppet.module_path = "puppet/modules"
+      puppet.manifest_file = "site.pp"
+      puppet.pp_path = "/puppet"
+    end
+  end
+end

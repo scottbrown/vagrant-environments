@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo drush make /tmp/Makefile /var/www/drupal7 && cd /var/www/drupal7 && sudo drush -y site-install --clean-url=0 --db-url=mysql://root:root@localhost:3306/drupal7 --account-name=admin --account-pass=admin --account-mail=admin@example.com --site-mail=admin@example.com standard 
+

@@ -25,7 +25,14 @@ provides fast and simple creation of a basic Drupal system.
 
 ## Drupal Website
 
+Drupal is created using drush, a Makefile, and the standard install
+profile provided in Drupal 7.  This is similar to if you downloaded 
+the drupal tarball yourself, and then proceeded to run through the 
+install wizard using the `Standard` profile.
+
 You will be able to see your website at: http://localhost:8080/drupal7
+
+You can login to your Drupal instance with the username `admin` and password `admin`.
 
 ## APC Caching
 

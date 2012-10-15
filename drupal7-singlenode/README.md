@@ -30,7 +30,7 @@ profile provided in Drupal 7.  This is similar to if you downloaded
 the drupal tarball yourself, and then proceeded to run through the 
 install wizard using the `Standard` profile.
 
-You will be able to see your website at: http://localhost:8080/drupal7
+You will be able to see your website at: [http://localhost:8080/drupal7](http://localhost:8080/drupal7)
 
 You can login to your Drupal instance with the username `admin` and password `admin`.
 
@@ -40,7 +40,7 @@ Only APC opcode caching is being used, as APC for data caching is not
 always the best (APC's memory mgmt sucks) and Memcached is much better.
 
 As an added bonus, you will also be able to view APC's statistics by 
-visiting: http://localhost:8080/apc.php
+visiting: [http://localhost:8080/apc.php](http://localhost:8080/apc.php)
 
 To prevent APC's stats page from skewing the statistics, I am manually 
 filtering out `/var/www/apc.php` from being in the opcode cache.
